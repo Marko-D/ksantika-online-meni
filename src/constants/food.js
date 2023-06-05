@@ -474,18 +474,18 @@ export const foodItems = [{
   },
   {
     id: 6,
-    title: "Пица",
+    title: "Пица и пастрмајлии",
     category: true,
     path: "/food/pizza",
     iconName: "pizza",
     items: [{
         id: 0,
-        title: 'Pizzzzzaa',
-        price: 220,
-        quantity: 250,
-        measureType: "гр.",
+        title: 'Маргарита',
+        price: 260,
+        quantity: 0,
+        measureType: '',
         description: '',
-        ingredients: [FoodEnum.pileshkiStek, FoodEnum.shampinjoni, FoodEnum.sheriDomat, FoodEnum.kromid, FoodEnum.parmesan, FoodEnum.beloVino]
+        ingredients: [FoodEnum.mocarela, FoodEnum.pelat]
       }
     ]
   },

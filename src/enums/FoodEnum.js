@@ -53,4 +53,8 @@ export const FoodEnum = Object.freeze({
   "lignji": "лигњи",
   "hopla": "хопла",
   "cetiriSirenja": "четири сирења",
+  "pelat": "пелат",
+  "kulen": "кулен",
+  "luk": "лук",
+  "gorgonzola": "горгонзола",
 });
