@@ -55,13 +55,6 @@ export const screenLightTheme = {
 export const textStyle = "text-gray-800";
 
 const Init = () => {
-	document.addEventListener('keydown', function(event) {
-		if (event.ctrlKey && event.key === 'r' || event.key ==='F5') {
-			console.log('aaaaaaaaaaa')
-			window.location.reload(); // Refresh the page
-		}
-	});
-
 	// you will need to set the height of  <Navigation /> wrapper,
 	// in this case, it is the root node,
 	// better to do this on your stylesheet
@@ -71,15 +64,12 @@ const Init = () => {
 
 	const [theme, setTheme] = useState(false);
 	const [data, setData] = useState();
-	// const [menu, setMenu] = useState();
-	// const [food, setFood] = useState();
-	// const [drinks, setDrinks] = useState();
 
 	const toggleTheme = () => {
 		setTheme((prevState) => !prevState);
 	};
 
-	const fetchFiles = async () => {
+	const getData = async () => {
 		const urls = [
 			'/online-meni/data/menu.json',
 			'/online-meni/data/food.json',
@@ -102,29 +92,14 @@ const Init = () => {
 		}
 	};
 
-	
-
-
-	// const getData = () => {
-	// 	fetch("/online-meni/food.json")
-	// 		.then((response) => response.json())
-	// 		.then((response) => {
-	// 			setFood(response);
-	// 		})
-	// 		.catch((error) => {
-	// 			console.error("Error:", error);
-	// 		});
-	// };
 
 	useEffect(() => {
-		// getData();
-		fetchFiles();
-		console.log(data);
+		getData();
 	}, []);
 
 	return (
 		<Fragment>
-			{!!data?.food && (
+			{!!data && (
 				<Router basename={"/online-meni"}>
 					<Navigation>
 						<Route exact path="/">
