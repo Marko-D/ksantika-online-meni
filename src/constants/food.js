@@ -2,86 +2,70 @@ import {
   FoodEnum
 } from "../enums/FoodEnum";
 
-export const foodItems = [{
-    id: 0,
-    title: "Чорби",
-    category: true,
-    path: "/food/soups",
-    iconName: "soup",
-    items: [{
-        id: 0,
-        title: 'Телешка чорба',
-        price: 120,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 1,
-        title: 'Рибја Чорба',
-        price: 130,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
-    ]
-  },
+export const foodItems = [
+  // {
+  //   id: 0,
+  //   title: "Чорби",
+  //   category: true,
+  //   path: "/food/soups",
+  //   iconName: "soup",
+  //   items: [{
+  //       id: 0,
+  //       title: 'Телешка чорба',
+  //       price: 120,
+  //       quantity: null,
+  //       measureType: "",
+  //       description: '',
+  //       ingredients: []
+  //     },
+  //     {
+  //       id: 1,
+  //       title: 'Рибја Чорба',
+  //       price: 130,
+  //       quantity: null,
+  //       measureType: "",
+  //       description: '',
+  //       ingredients: []
+  //     },
+  //   ]
+  // },
   {
     id: 1,
     title: "Салати",
     category: true,
     path: "/food/salads",
     iconName: "salad",
-    items: [{
-        id: 0,
-        title: 'Домат салата',
-        price: 100,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
+    items: [
       {
-        id: 1,
+        id: 0,
         title: 'Шопска салата',
-        price: 130,
+        price: 150,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: [FoodEnum.domat, FoodEnum.krastavica, FoodEnum.kromid, FoodEnum.sirenje]
       },
       {
-        id: 2,
+        id: 1,
         title: 'Таратур',
-        price: 100,
+        price: 130,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: []
       },
       {
-        id: 3,
+        id: 2,
         title: 'Македонска салата',
-        price: 130,
+        price: 170,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: [FoodEnum.domat, FoodEnum.peceniPiperki, FoodEnum.kromid, FoodEnum.magdonos]
       },
       {
-        id: 4,
-        title: 'Мимоза салата',
-        price: 110,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: [FoodEnum.marula, FoodEnum.jajce, FoodEnum.rotkvica]
-      },
-      {
-        id: 5,
-        title: 'Мешана свежа салата',
+        id: 3,
+        title: 'Мешана свежа салата со семки од тиква',
         price: 140,
         quantity: null,
         measureType: "",
@@ -89,45 +73,45 @@ export const foodItems = [{
         ingredients: [FoodEnum.morkov, FoodEnum.cveklo, FoodEnum.zelka, FoodEnum.domat, FoodEnum.krastavica]
       },
       {
-        id: 6,
+        id: 4,
         title: 'Медитеранска салата',
-        price: 140,
+        price: 150,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: [FoodEnum.domat, FoodEnum.krastavica, FoodEnum.piper, FoodEnum.kromid, FoodEnum.sirenje, FoodEnum.maslinki]
       },
       {
-        id: 7,
+        id: 5,
         title: 'Цезар салата',
-        price: 220,
+        price: 290,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: [FoodEnum.ajsberg, FoodEnum.parmesan, FoodEnum.pileskoMeso, FoodEnum.kubeti, FoodEnum.dresingSos]
       },
       {
-        id: 8,
+        id: 6,
         title: 'Туна салата',
-        price: 180,
+        price: 260,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: [FoodEnum.tuna, FoodEnum.ajsberg, FoodEnum.marula, FoodEnum.rukola, FoodEnum.sheriDomat, FoodEnum.maslinki, FoodEnum.jajce, ]
       },
       {
-        id: 9,
+        id: 7,
         title: 'Капрезе салата',
-        price: 220,
+        price: 260,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: [FoodEnum.domat, FoodEnum.mocarela, FoodEnum.pesto]
       },
       {
-        id: 10,
+        id: 8,
         title: 'Рукола',
-        price: 210,
+        price: 270,
         quantity: null,
         measureType: "",
         description: '',
@@ -144,7 +128,7 @@ export const foodItems = [{
     items: [{
         id: 0,
         title: 'Класик омлет',
-        price: 120,
+        price: 160,
         quantity: null,
         measureType: "",
         description: '',
@@ -153,7 +137,7 @@ export const foodItems = [{
       {
         id: 1,
         title: 'Медитерански омлет',
-        price: 130,
+        price: 160,
         quantity: null,
         measureType: "",
         description: '',
@@ -162,7 +146,7 @@ export const foodItems = [{
       {
         id: 2,
         title: 'Шампионски омлет',
-        price: 150,
+        price: 180,
         quantity: null,
         measureType: "",
         description: '',
@@ -171,21 +155,12 @@ export const foodItems = [{
       {
         id: 3,
         title: 'Македонски доручек',
-        price: 130,
+        price: 160,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: [FoodEnum.dveJajcaNaOko, FoodEnum.sirenje, FoodEnum.ajvar, FoodEnum.maslinki]
-      },
-      {
-        id: 4,
-        title: 'Пржени лепчиња со шунка и кашкавал',
-        price: 120,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
+      }
     ]
   },
   {
@@ -197,38 +172,38 @@ export const foodItems = [{
     items: [{
         id: 0,
         title: 'Пршута сендвич',
-        price: 160,
+        price: 210,
         quantity: null,
         measureType: "",
         description: '',
-        ingredients: [FoodEnum.prshuta, FoodEnum.ajdamer, FoodEnum.pavlaka, FoodEnum.rukola, FoodEnum.marula, FoodEnum.lepche]
+        ingredients: [FoodEnum.prshuta, FoodEnum.kaskaval, FoodEnum.pavlaka, FoodEnum.domat, FoodEnum.krastavica, FoodEnum.pavlaka, FoodEnum.namaz]
       },
       {
         id: 1,
         title: 'Панини сендвич',
-        price: 130,
+        price: 180,
         quantity: null,
         measureType: "",
         description: '',
-        ingredients: [FoodEnum.pileshkaSalama, FoodEnum.ajdamer, FoodEnum.namazOdJajacaIMajonez, FoodEnum.kiseliKrastavicki, FoodEnum.lepche]
+        ingredients: [FoodEnum.shunka, FoodEnum.kaskaval, FoodEnum.domat, FoodEnum.krastavica, FoodEnum.pavlaka, FoodEnum.marula]
       },
       {
         id: 2,
-        title: 'Клуб сендвич',
-        price: 170,
+        title: 'Пиза сендвич',
+        price: 220,
         quantity: null,
         measureType: "",
         description: '',
-        ingredients: [FoodEnum.pileshko, FoodEnum.marula, FoodEnum.rukola, FoodEnum.jajce, FoodEnum.domat, FoodEnum.pomfrit]
+        ingredients: [FoodEnum.shunka, FoodEnum.kaskaval, FoodEnum.pelat, FoodEnum.pecurki]
       },
       {
         id: 3,
-        title: 'Пилешки врап',
-        price: 140,
+        title: 'Пеперони сендвич',
+        price: 240,
         quantity: null,
         measureType: "",
         description: '',
-        ingredients: [FoodEnum.pileshko, FoodEnum.ajdamer, FoodEnum.marula, FoodEnum.rukola, FoodEnum.domat, FoodEnum.kechap, FoodEnum.majonez]
+        ingredients: [FoodEnum.kulen, FoodEnum.kaskaval, FoodEnum.pecurki]
       },
     ]
   },
@@ -241,25 +216,25 @@ export const foodItems = [{
     items: [{
         id: 0,
         title: 'Овчо сирење',
-        price: 100,
+        price: 150,
         quantity: 100,
         measureType: "гр.",
         description: '',
         ingredients: []
       },
-      {
-        id: 1,
-        title: 'Биено сирење',
-        price: 120,
-        quantity: 100,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
+      // {
+      //   id: 1,
+      //   title: 'Биено сирење',
+      //   price: 120,
+      //   quantity: 100,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
       {
         id: 2,
         title: 'Овчи кашкавал',
-        price: 140,
+        price: 180,
         quantity: 100,
         measureType: "гр.",
         description: '',
@@ -268,7 +243,7 @@ export const foodItems = [{
       {
         id: 3,
         title: 'Пармезан',
-        price: 210,
+        price: 250,
         quantity: 100,
         measureType: "гр.",
         description: '',
@@ -283,19 +258,19 @@ export const foodItems = [{
         description: '',
         ingredients: []
       },
-      {
-        id: 5,
-        title: 'Моцарела',
-        price: 140,
-        quantity: 125,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
+      // {
+      //   id: 5,
+      //   title: 'Моцарела',
+      //   price: 140,
+      //   quantity: 125,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
       {
         id: 6,
         title: 'Пиперка во павлака',
-        price: 120,
+        price: 150,
         quantity: null,
         measureType: "",
         description: '',
@@ -319,15 +294,15 @@ export const foodItems = [{
         description: '',
         ingredients: []
       },
-      {
-        id: 9,
-        title: 'Италијанска салама',
-        price: 180,
-        quantity: 100,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
+      // {
+      //   id: 9,
+      //   title: 'Италијанска салама',
+      //   price: 180,
+      //   quantity: 100,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
       {
         id: 10,
         title: 'Маслинки',
@@ -340,7 +315,7 @@ export const foodItems = [{
       {
         id: 11,
         title: 'Пинџур',
-        price: 130,
+        price: 150,
         quantity: 150,
         measureType: "гр.",
         description: '',
@@ -349,11 +324,20 @@ export const foodItems = [{
       {
         id: 12,
         title: 'Ајвар',
-        price: 130,
+        price: 150,
         quantity: 150,
         measureType: "гр.",
         description: '',
         ingredients: []
+      },
+      {
+        id: 13,
+        title: 'Ладна даска',
+        price: 880,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ["свинска пршута 60гр", "говедска пршута 60гр", "пармезан 60гр", "овчо кашкавал 60гр", "горгонзола 60гр"]
       },
     ]
   },
@@ -366,25 +350,25 @@ export const foodItems = [{
     items: [{
         id: 0,
         title: 'Биено сирење на скара',
-        price: 120,
+        price: 170,
         quantity: 100,
         measureType: "гр.",
         description: '',
         ingredients: []
       },
-      {
-        id: 1,
-        title: 'Топено сирење',
-        price: 220,
-        quantity: 250,
-        measureType: "гр.",
-        description: '',
-        ingredients: [FoodEnum.sirenje, FoodEnum.ajvar, FoodEnum.maslinki, FoodEnum.kaskaval]
-      },
+      // {
+      //   id: 1,
+      //   title: 'Топено сирење',
+      //   price: 220,
+      //   quantity: 250,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: [FoodEnum.sirenje, FoodEnum.ajvar, FoodEnum.maslinki, FoodEnum.kaskaval]
+      // },
       {
         id: 2,
         title: 'Зденка похована',
-        price: 30,
+        price: 60,
         quantity: 30,
         measureType: "гр.",
         description: '',
@@ -393,8 +377,8 @@ export const foodItems = [{
       {
         id: 3,
         title: 'Похован Кашкавал',
-        price: 120,
-        quantity: 100,
+        price: 180,
+        quantity: 80,
         measureType: "гр.",
         description: '',
         ingredients: []
@@ -403,13 +387,22 @@ export const foodItems = [{
         id: 4,
         title: 'Пирошка',
         price: 120,
-        quantity: 150,
+        quantity: 100,
         measureType: "гр.",
         description: '',
         ingredients: []
       },
       {
         id: 5,
+        title: 'Пилешки прсти',
+        price: 290,
+        quantity: 250,
+        measureType: "гр.",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 6,
         title: 'Чипс тиквици',
         price: 140,
         quantity: 250,
@@ -418,18 +411,9 @@ export const foodItems = [{
         ingredients: []
       },
       {
-        id: 6,
-        title: 'Тиквици на скара',
-        price: 120,
-        quantity: 250,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-      {
         id: 7,
-        title: 'Шампињони на скара',
-        price: 130,
+        title: 'Тиквици на скара',
+        price: 140,
         quantity: 250,
         measureType: "гр.",
         description: '',
@@ -437,56 +421,57 @@ export const foodItems = [{
       },
       {
         id: 8,
-        title: 'Вргањ на скара',
-        price: 270,
-        quantity: 300,
+        title: 'Шампињони на скара',
+        price: 160,
+        quantity: 250,
+        measureType: "гр.",
         description: '',
         ingredients: []
       },
+      // {
+      //   id: 8,
+      //   title: 'Вргањ на скара',
+      //   price: 270,
+      //   quantity: 300,
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 9,
+      //   title: 'Зеленчук на скара',
+      //   price: 160,
+      //   quantity: 250,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 10,
+      //   title: 'Модар домат на скара со лук',
+      //   price: 130,
+      //   quantity: 250,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 11,
+      //   title: 'Чипс тортиља со чедар и со павлака',
+      //   price: 160,
+      //   quantity: 250,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
       {
         id: 9,
-        title: 'Зеленчук на скара',
-        price: 160,
-        quantity: 250,
-        measureType: "гр.",
+        title: 'Топло мезе',
+        price: 620,
+        quantity: '',
+        measureType: "",
         description: '',
-        ingredients: []
+        ingredients: ['пирошка', 'кашкавал', 'зденка', 'тиквици', 'пилешки прсти', 'крокети']
       },
-      {
-        id: 10,
-        title: 'Модар домат на скара со лук',
-        price: 130,
-        quantity: 250,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 11,
-        title: 'Чипс тортиља со чедар и со павлака',
-        price: 160,
-        quantity: 250,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-    ]
-  },
-  {
-    id: 6,
-    title: "Пица",
-    category: true,
-    path: "/food/pizza",
-    iconName: "pizza",
-    items: [{
-        id: 0,
-        title: 'Pizzzzzaa',
-        price: 220,
-        quantity: 250,
-        measureType: "гр.",
-        description: '',
-        ingredients: [FoodEnum.pileshkiStek, FoodEnum.shampinjoni, FoodEnum.sheriDomat, FoodEnum.kromid, FoodEnum.parmesan, FoodEnum.beloVino]
-      }
     ]
   },
   {
@@ -498,30 +483,30 @@ export const foodItems = [{
     items: [{
         id: 0,
         title: 'Рижото со пилешко',
-        price: 220,
+        price: 260,
         quantity: 250,
         measureType: "гр.",
         description: '',
-        ingredients: [FoodEnum.pileshkiStek, FoodEnum.shampinjoni, FoodEnum.sheriDomat, FoodEnum.kromid, FoodEnum.parmesan, FoodEnum.beloVino]
+        ingredients: ['пилешки стек', 'шампињони', 'шери', 'кромид', 'пармезан']
       },
       {
         id: 1,
         title: 'Рижото со зеленчук',
-        price: 210,
+        price: 240,
         quantity: 250,
         measureType: "гр.",
         description: '',
-        ingredients: [FoodEnum.tikvica, FoodEnum.modarDomat, FoodEnum.piperki, FoodEnum.shampinjoni, FoodEnum.parmesan, FoodEnum.beloVino]
+        ingredients: ['тиквица', 'модар домат', 'пиперка', 'шампињони', 'пармезан']
       },
-      {
-        id: 2,
-        title: 'Рижото со морски плодови',
-        price: 250,
-        quantity: 250,
-        measureType: "гр.",
-        description: '',
-        ingredients: [FoodEnum.shkampi, FoodEnum.shkolki, FoodEnum.lignji, FoodEnum.kromid, FoodEnum.beloVino]
-      },
+      // {
+      //   id: 2,
+      //   title: 'Рижото со морски плодови',
+      //   price: 250,
+      //   quantity: 250,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: [FoodEnum.shkampi, FoodEnum.shkolki, FoodEnum.lignji, FoodEnum.kromid, FoodEnum.beloVino]
+      // },
     ]
   },
   {
@@ -533,421 +518,664 @@ export const foodItems = [{
     items: [{
         id: 0,
         title: 'Фунги',
-        price: 180,
+        price: 230,
         quantity: 250,
         measureType: "гр.",
         description: '',
-        ingredients: [FoodEnum.shampinjoni, FoodEnum.shunka, FoodEnum.hopla, FoodEnum.parmesan]
+        ingredients: ['шампињони', 'шунка', 'хопла', 'пармезан']
       },
       {
         id: 1,
         title: 'Карбонара',
-        price: 200,
+        price: 240,
         quantity: 250,
         measureType: "гр.",
         description: '',
-        ingredients: [FoodEnum.slanina, FoodEnum.jajce, FoodEnum.hopla, FoodEnum.parmesan]
+        ingredients: ['сланина', 'јајце', 'хопла', 'пармезан']
       },
       {
         id: 2,
         title: 'Кватро формаџи',
-        price: 210,
+        price: 260,
         quantity: 250,
         measureType: "гр.",
         description: '',
-        ingredients: [FoodEnum.cetiriSirenja, FoodEnum.hopla]
+        ingredients: ['четири сирења', 'хопла']
+      },
+    ]
+  },
+  {
+    id: 6,
+    title: "Пица и пастрмајлии",
+    category: true,
+    path: "/food/pizza",
+    iconName: "pizza",
+    items: [
+      {
+        id: 0,
+        title: 'Маргарита',
+        price: 260,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['моцарела', 'пелат']
+      },
+      {
+        id: 0,
+        title: 'Капричиоза',
+        price: 290,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'шунка', 'печурки']
+      },
+      {
+        id: 0,
+        title: 'Пеперони',
+        price: 300,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'кулен']
+      },
+      {
+        id: 0,
+        title: 'Везувио',
+        price: 280,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'печурки']
+      },
+      {
+        id: 0,
+        title: 'Наполитана',
+        price: 290,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'шунка']
+      },
+      {
+        id: 0,
+        title: 'Пармиџана',
+        price: 370,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'пршута', 'рукола', 'пармезан']
+      },
+      {
+        id: 0,
+        title: 'Алполио',
+        price: 270,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'магдонос', 'лук']
+      },
+      {
+        id: 0,
+        title: 'Ксантика',
+        price: 420,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'кулен', 'пршута', 'домат', 'сирење', 'павлака']
+      },
+      {
+        id: 0,
+        title: 'Кватро формаџи',
+        price: 380,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'ајдамер', 'горгонзола', 'пармезан', 'моцарела']
+      },
+      {
+        id: 0,
+        title: 'Карбонара',
+        price: 360,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'сланина', 'јајце']
+      },
+      {
+        id: 0,
+        title: 'Вегетаријана',
+        price: 350,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'домат', 'пиперка', 'тиквица', 'кромид', 'маслинка', 'печурки']
+      },
+      {
+        id: 0,
+        title: 'Затворена пица капричиоза',
+        price: 220,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'шунка', 'печурки']
+      },
+      {
+        id: 0,
+        title: 'Затворена пица пеперони',
+        price: 250,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: ['пелат', 'моцарела', 'кулен', 'павлака']
+      },
+      {
+        id: 0,
+        title: 'Свинска пастрмалјија',
+        price: 290,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Пилешка пастрмајлија',
+        price: 270,
+        quantity: '',
+        measureType: '',
+        description: '',
+        ingredients: []
       },
     ]
   },
   {
     id: 9,
-    title: "Риба и морски плодови",
+    title: "Главно јадење",
     category: true,
-    path: "/food/fish",
-    iconName: "fish",
-    items: [{
-        id: 0,
-        title: 'Пастрмка',
-        price: 750,
-        quantity: 1,
-        measureType: "кг.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 1,
-        title: 'Орада',
-        price: 1100,
-        quantity: 1,
-        measureType: "кг.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 2,
-        title: 'Лосос',
-        price: 1950,
-        quantity: 1,
-        measureType: "кг.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 3,
-        title: 'Лигњи на скара',
-        price: 350,
-        quantity: 200,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 4,
-        title: 'Лигњи поховани',
-        price: 350,
-        quantity: 200,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-    ]
-  },
-  {
-    id: 10,
-    title: "Специјалитети од месо",
-    category: true,
-    path: "/food/meat-specialties",
+    path: "/food/main-course",
     iconName: "meat",
-    items: [{
+    items: [
+      {
         id: 0,
-        title: "Специјалитети од пилешко",
-        category: true,
-        path: "/food/meat-specialties/chicken",
-        iconName: "chicken",
-        items: [{
-            id: 0,
-            title: 'Пилешки стек',
-            price: 170,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 1,
-            title: 'Полнето пилешко со кашкавал, печурки и сланина',
-            price: 240,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 2,
-            title: 'Полнето пилешко со моцарела и сув домат',
-            price: 270,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 3,
-            title: 'Пилешки медаљони со бадем и песто',
-            price: 260,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 4,
-            title: 'Пилешко крцкаво во чедар сос',
-            price: 290,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 5,
-            title: 'Пилешко во кари сос',
-            price: 230,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 6,
-            title: 'Пилешки прсти со тартар сос',
-            price: 190,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-        ]
+        title: 'Пилешки стек',
+        price: 240,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
       },
       {
-        id: 1,
-        title: "Специјалитети од свинско",
-        category: true,
-        path: "/food/meat-specialties/pork",
-        iconName: "pork",
-        items: [{
-            id: 0,
-            title: 'Вешалица',
-            price: 200,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 1,
-            title: 'Растурен ражнич со грилован зеленчук',
-            price: 210,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 2,
-            title: 'Свежо ребро на скара',
-            price: 200,
-            quantity: 350,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 3,
-            title: 'Ребро со кременадла',
-            price: 340,
-            quantity: 500,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 4,
-            title: 'Свинско филе',
-            price: 320,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 5,
-            title: 'Свинско филе со праз и пиперка',
-            price: 360,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 6,
-            title: 'Полнето свинско филе со пршут и кашкавал во сос од печурки',
-            price: 440,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 7,
-            title: 'Свински медаљони во пршут',
-            price: 410,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 8,
-            title: 'Бечка шницла',
-            price: 240,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-        ]
+        id: 0,
+        title: 'Пилешко крцкаво во чедар сос',
+        price: 380,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
       },
       {
-        id: 2,
-        title: "Мелено месо / Колбаси",
-        category: true,
-        path: "/food/meat-specialties/minced-meat",
-        iconName: "minced",
-        items: [{
-            id: 0,
-            title: 'Плескавица',
-            price: 160,
-            quantity: 200,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 1,
-            title: 'Шарска плескавица',
-            price: 190,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 2,
-            title: 'Гурманска плескавица',
-            price: 190,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 3,
-            title: 'Плескавица со кајмак',
-            price: 250,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 4,
-            title: 'Уштипци',
-            price: 50,
-            quantity: 60,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 5,
-            title: 'Колбас',
-            price: 150,
-            quantity: 200,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-        ]
+        id: 0,
+        title: 'Пилешко во кари сос',
+        price: 290,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
       },
       {
-        id: 3,
-        title: "Специјалитети од телешко",
-        category: true,
-        path: "/food/meat-specialties/veal",
-        iconName: "veal",
-        items: [{
-            id: 0,
-            title: 'Бифтек',
-            price: 950,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 1,
-            title: 'Телешки медаљони со печурки во еспањол сос',
-            price: 920,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 2,
-            title: 'Телешко соте',
-            price: 900,
-            quantity: 250,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 3,
-            title: 'Телешка кременадла',
-            price: 510,
-            quantity: 350,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 4,
-            title: 'Телешки мускул во сос',
-            price: 340,
-            quantity: 300,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-        ]
+        id: 0,
+        title: 'Пилешки стек во Алфредо сос',
+        price: 330,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
       },
       {
-        id: 4,
-        title: "Печење",
-        category: true,
-        path: "/food/meat-specialties/roast-meat",
-        iconName: "roast",
-        items: [{
-            id: 0,
-            title: 'Ребро во фурна',
-            price: 340,
-            quantity: 350,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 1,
-            title: 'Барбикју ребро',
-            price: 370,
-            quantity: 350,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 2,
-            title: 'Коленица',
-            price: 350,
-            quantity: 450,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 3,
-            title: 'Прасечко',
-            price: 1080,
-            quantity: 1,
-            measureType: "кг.",
-            description: '',
-            ingredients: []
-          },
-          {
-            id: 4,
-            title: 'Јагнешки котлети',
-            price: 350,
-            quantity: 350,
-            measureType: "гр.",
-            description: '',
-            ingredients: []
-          },
-        ]
+        id: 0,
+        title: 'Плескавица',
+        price: 250,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Плескавица со кајмак',
+        price: 310,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Шарска плескавица',
+        price: 310,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Домашна кобасица',
+        price: 250,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Свинско филе со праз и суви пиперки',
+        price: 520,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Свинско печење во грне со сос од печурки',
+        price: 330,
+        quantity: '',
+        measureType: "",
+        description: '',
+        ingredients: []
       },
     ]
   },
+  // {
+  //   id: 9,
+  //   title: "Риба и морски плодови",
+  //   category: true,
+  //   path: "/food/fish",
+  //   iconName: "fish",
+  //   items: [{
+  //       id: 0,
+  //       title: 'Пастрмка',
+  //       price: 750,
+  //       quantity: 1,
+  //       measureType: "кг.",
+  //       description: '',
+  //       ingredients: []
+  //     },
+  //     {
+  //       id: 1,
+  //       title: 'Орада',
+  //       price: 1100,
+  //       quantity: 1,
+  //       measureType: "кг.",
+  //       description: '',
+  //       ingredients: []
+  //     },
+  //     {
+  //       id: 2,
+  //       title: 'Лосос',
+  //       price: 1950,
+  //       quantity: 1,
+  //       measureType: "кг.",
+  //       description: '',
+  //       ingredients: []
+  //     },
+  //     {
+  //       id: 3,
+  //       title: 'Лигњи на скара',
+  //       price: 350,
+  //       quantity: 200,
+  //       measureType: "гр.",
+  //       description: '',
+  //       ingredients: []
+  //     },
+  //     {
+  //       id: 4,
+  //       title: 'Лигњи поховани',
+  //       price: 350,
+  //       quantity: 200,
+  //       measureType: "гр.",
+  //       description: '',
+  //       ingredients: []
+  //     },
+  //   ]
+  // },
+  // {
+  //   id: 10,
+  //   title: "Специјалитети од месо",
+  //   category: true,
+  //   path: "/food/meat-specialties",
+  //   iconName: "meat",
+  //   items: [{
+  //       id: 0,
+  //       title: "Специјалитети од пилешко",
+  //       category: true,
+  //       path: "/food/meat-specialties/chicken",
+  //       iconName: "chicken",
+  //       items: [{
+  //           id: 0,
+  //           title: 'Пилешки стек',
+  //           price: 170,
+  //           quantity: 250,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 1,
+  //           title: 'Полнето пилешко со кашкавал, печурки и сланина',
+  //           price: 240,
+  //           quantity: 300,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 2,
+  //           title: 'Полнето пилешко со моцарела и сув домат',
+  //           price: 270,
+  //           quantity: 300,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 3,
+  //           title: 'Пилешки медаљони со бадем и песто',
+  //           price: 260,
+  //           quantity: 250,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 4,
+  //           title: 'Пилешко крцкаво во чедар сос',
+  //           price: 290,
+  //           quantity: 300,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 5,
+  //           title: 'Пилешко во кари сос',
+  //           price: 230,
+  //           quantity: 250,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 6,
+  //           title: 'Пилешки прсти со тартар сос',
+  //           price: 190,
+  //           quantity: 300,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //       ]
+  //     },
+      // {
+      //   id: 1,
+      //   title: "Специјалитети од свинско",
+      //   category: true,
+      //   path: "/food/meat-specialties/pork",
+      //   iconName: "pork",
+      //   items: [{
+      //       id: 0,
+      //       title: 'Вешалица',
+      //       price: 200,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 1,
+      //       title: 'Растурен ражнич со грилован зеленчук',
+      //       price: 210,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 2,
+      //       title: 'Свежо ребро на скара',
+      //       price: 200,
+      //       quantity: 350,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 3,
+      //       title: 'Ребро со кременадла',
+      //       price: 340,
+      //       quantity: 500,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 4,
+      //       title: 'Свинско филе',
+      //       price: 320,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 5,
+      //       title: 'Свинско филе со праз и пиперка',
+      //       price: 360,
+      //       quantity: 300,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 6,
+      //       title: 'Полнето свинско филе со пршут и кашкавал во сос од печурки',
+      //       price: 440,
+      //       quantity: 300,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 7,
+      //       title: 'Свински медаљони во пршут',
+      //       price: 410,
+      //       quantity: 300,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 8,
+      //       title: 'Бечка шницла',
+      //       price: 240,
+      //       quantity: 300,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //   ]
+      // },
+      // {
+      //   id: 2,
+      //   title: "Мелено месо / Колбаси",
+      //   category: true,
+      //   path: "/food/meat-specialties/minced-meat",
+      //   iconName: "minced",
+      //   items: [{
+      //       id: 0,
+      //       title: 'Плескавица',
+      //       price: 160,
+      //       quantity: 200,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 1,
+      //       title: 'Шарска плескавица',
+      //       price: 190,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 2,
+      //       title: 'Гурманска плескавица',
+      //       price: 190,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 3,
+      //       title: 'Плескавица со кајмак',
+      //       price: 250,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 4,
+      //       title: 'Уштипци',
+      //       price: 50,
+      //       quantity: 60,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 5,
+      //       title: 'Колбас',
+      //       price: 150,
+      //       quantity: 200,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //   ]
+      // },
+      // {
+      //   id: 3,
+      //   title: "Специјалитети од телешко",
+      //   category: true,
+      //   path: "/food/meat-specialties/veal",
+      //   iconName: "veal",
+      //   items: [{
+      //       id: 0,
+      //       title: 'Бифтек',
+      //       price: 950,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 1,
+      //       title: 'Телешки медаљони со печурки во еспањол сос',
+      //       price: 920,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 2,
+      //       title: 'Телешко соте',
+      //       price: 900,
+      //       quantity: 250,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 3,
+      //       title: 'Телешка кременадла',
+      //       price: 510,
+      //       quantity: 350,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //     {
+      //       id: 4,
+      //       title: 'Телешки мускул во сос',
+      //       price: 340,
+      //       quantity: 300,
+      //       measureType: "гр.",
+      //       description: '',
+      //       ingredients: []
+      //     },
+      //   ]
+      // },
+  //     {
+  //       id: 4,
+  //       title: "Печење",
+  //       category: true,
+  //       path: "/food/meat-specialties/roast-meat",
+  //       iconName: "roast",
+  //       items: [{
+  //           id: 0,
+  //           title: 'Ребро во фурна',
+  //           price: 340,
+  //           quantity: 350,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 1,
+  //           title: 'Барбикју ребро',
+  //           price: 370,
+  //           quantity: 350,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 2,
+  //           title: 'Коленица',
+  //           price: 350,
+  //           quantity: 450,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 3,
+  //           title: 'Прасечко',
+  //           price: 1080,
+  //           quantity: 1,
+  //           measureType: "кг.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //         {
+  //           id: 4,
+  //           title: 'Јагнешки котлети',
+  //           price: 350,
+  //           quantity: 350,
+  //           measureType: "гр.",
+  //           description: '',
+  //           ingredients: []
+  //         },
+  //       ]
+  //     },
+  //   ]
+  // },
   {
     id: 11,
     title: "Додатоци и прилози",
@@ -957,7 +1185,25 @@ export const foodItems = [{
     items: [{
         id: 0,
         title: 'Лепиња',
-        price: 20,
+        price: 30,
+        quantity: null,
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Фурнарини',
+        price: 100,
+        quantity: null,
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      {
+        id: 0,
+        title: 'Фурнарини со кашкавал',
+        price: 150,
         quantity: null,
         measureType: "",
         description: '',
@@ -967,65 +1213,65 @@ export const foodItems = [{
         id: 1,
         title: 'Пекарски компир',
         price: 80,
-        quantity: 300,
-        measureType: "гр.",
+        quantity: null,
+        measureType: "",
         description: '',
         ingredients: []
       },
       {
         id: 2,
         title: 'Помфрит',
-        price: 90,
-        quantity: 300,
-        measureType: "гр.",
+        price: 120,
+        quantity: null,
+        measureType: "",
         description: '',
         ingredients: []
       },
       {
         id: 3,
         title: 'Помфрит со сирење',
-        price: 120,
-        quantity: 350,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 4,
-        title: 'Брокула',
-        price: 120,
-        quantity: 250,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 5,
-        title: 'Пиперка',
-        price: 30,
+        price: 170,
         quantity: null,
         measureType: "",
         description: '',
         ingredients: []
       },
-      {
-        id: 6,
-        title: 'Кајмак',
-        price: 90,
-        quantity: 60,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 7,
-        title: 'Јајца варено',
-        price: 20,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
+      // {
+      //   id: 4,
+      //   title: 'Брокула',
+      //   price: 120,
+      //   quantity: 250,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 5,
+      //   title: 'Пиперка',
+      //   price: 30,
+      //   quantity: null,
+      //   measureType: "",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 6,
+      //   title: 'Кајмак',
+      //   price: 90,
+      //   quantity: 60,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 7,
+      //   title: 'Јајца варено',
+      //   price: 20,
+      //   quantity: null,
+      //   measureType: "",
+      //   description: '',
+      //   ingredients: []
+      // },
     ]
   },
   {
@@ -1034,19 +1280,11 @@ export const foodItems = [{
     category: true,
     path: "/food/dessert",
     iconName: "dessert",
-    items: [{
-        id: 0,
-        title: 'Топло ладно',
-        price: 140,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
+    items: [
       {
         id: 1,
         title: 'Палачинки со крем и банана',
-        price: 100,
+        price: 120,
         quantity: null,
         measureType: "",
         description: '',
@@ -1055,7 +1293,7 @@ export const foodItems = [{
       {
         id: 2,
         title: 'Палачинки со крем, банана и плазма',
-        price: 120,
+        price: 130,
         quantity: null,
         measureType: "",
         description: '',
@@ -1064,7 +1302,7 @@ export const foodItems = [{
       {
         id: 3,
         title: 'Палачинки со мед и ореви',
-        price: 100,
+        price: 110,
         quantity: null,
         measureType: "",
         description: '',
@@ -1072,33 +1310,6 @@ export const foodItems = [{
       },
       {
         id: 4,
-        title: 'Чоколаден колач',
-        price: 70,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 5,
-        title: 'Баклава',
-        price: 90,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 6,
-        title: 'Штрудла со јаболко',
-        price: 60,
-        quantity: null,
-        measureType: "",
-        description: '',
-        ingredients: []
-      },
-      {
-        id: 7,
         title: 'Лешник, бадем, индиски микс',
         price: 150,
         quantity: 100,
@@ -1106,15 +1317,42 @@ export const foodItems = [{
         description: '',
         ingredients: []
       },
-      {
-        id: 8,
-        title: 'Кикирики',
-        price: 50,
-        quantity: 100,
-        measureType: "гр.",
-        description: '',
-        ingredients: []
-      },
+      // {
+      //   id: 5,
+      //   title: 'Баклава',
+      //   price: 90,
+      //   quantity: null,
+      //   measureType: "",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 6,
+      //   title: 'Штрудла со јаболко',
+      //   price: 60,
+      //   quantity: null,
+      //   measureType: "",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 7,
+      //   title: 'Лешник, бадем, индиски микс',
+      //   price: 150,
+      //   quantity: 100,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
+      // {
+      //   id: 8,
+      //   title: 'Кикирики',
+      //   price: 50,
+      //   quantity: 100,
+      //   measureType: "гр.",
+      //   description: '',
+      //   ingredients: []
+      // },
     ]
   },
 ]
