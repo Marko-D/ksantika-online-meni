@@ -18,9 +18,9 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "npm run watch:css && react-scripts start",
-    "build": "node ./update-build.js && npm run watch:css && react-scripts build",
-    "test": "react-scripts test",
+    "start": "npm run watch:css && react-app-rewired start",
+    "build": "node ./update-build.js && npm run watch:css && react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "watch:css": "postcss src/App.css -o src/assets/main.css"
   },
@@ -45,7 +45,8 @@
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^8.3.1",
+    "react-app-rewired": "^2.2.1",
     "tailwindcss": "^2.0.4"
   },
-  "buildDate": 1621767701233
+  "buildDate": 1686042013344
 }

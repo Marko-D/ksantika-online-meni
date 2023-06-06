@@ -546,7 +546,7 @@ export const foodItems = [
   },
   {
     id: 6,
-    title: "Пица и пастрмајлии",
+    title: "Пици и пастрмајлии",
     category: true,
     path: "/food/pizza",
     iconName: "pizza",

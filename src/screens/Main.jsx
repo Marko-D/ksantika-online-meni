@@ -36,14 +36,12 @@ const Main = ({ toggleTheme, theme }) => {
 				<div className="flex justify-center mt-5 mb-10">
 					{!loading && (
 						<div>
-							<Icon name={`logo-${theme}`} width="120" className="flex" />
+							<Icon name={`logo-${theme}`} width="140" className="flex" />
 						</div>
 					)}
 				</div>
 				<div className="mt-10 mb-5">
-					<h1
-						className={`flex-1 text-3xl uppercase font-medium text-center text-white ${textStyle[theme]}`}
-					>
+					<h1 className={`flex-1 text-2xl uppercase font-medium text-center text-white ${textStyle[theme]}`}>
 						Мени
 					</h1>
 				</div>
@@ -60,12 +58,14 @@ const Main = ({ toggleTheme, theme }) => {
 					))}
 				</div>
 
-				<div
-					className={`pt-3 pb-3 pl-3 pr-3 text-red-800 flex text-center mt-10`}
-				>
-					<div
-						className={`font-medium text-white rounded-lg m-auto items-center`}
-					>
+				
+				<div className="mt-8 text-md font-medium text-gray-500 text-center">
+					<p>070 864 864</p>
+					<p>ул.1640 бр.9, Хиподром</p>
+				</div>
+
+				<div className={`pt-3 pb-3 pl-3 pr-3 text-red-800 flex text-center mt-10`}>
+					<div className={`font-medium text-white rounded-lg m-auto items-center`}>
 						<Button title={`Смени тема`} onClick={toggleTheme} />
 						<div className="mt-5">
 							<Icon
@@ -85,13 +85,10 @@ const Main = ({ toggleTheme, theme }) => {
 					</div>
 				</div>
 
-				<div className="mt-5 text-sm font-small text-gray-500 text-center">
-					<p>070 864 864</p>
-					<p>ул.1640 бр.9, Хиподром</p>
+				<div className="m-auto mt-5 text-xs font-small text-gray-500 text-center">
+					<p>{getBuildDate(packageJson.buildDate)}</p>
 				</div>
-				<div className="absolute m-auto left-0 right-0 bottom-5 mt-5 text-xs font-small text-gray-500 text-center">
-					<p>Build date: {getBuildDate(packageJson.buildDate)}</p>
-				</div>
+				
 			</Container>
 		</>
 	);
