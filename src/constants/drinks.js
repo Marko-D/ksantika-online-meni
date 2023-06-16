@@ -496,17 +496,16 @@ export const drinksItems = [{
         measureType: "",
         description: '',
         ingredients: []
-      }, 
-      ,
-      {
-        id: 4,
-        title: 'Златен Даб',
-        price: 110,
-        quantity: "0.5",
-        measureType: "",
-        description: '',
-        ingredients: []
-      },      
+      },       
+      // {
+      //   id: 4,
+      //   title: 'Златен Даб',
+      //   price: 110,
+      //   quantity: "0.5",
+      //   measureType: "",
+      //   description: '',
+      //   ingredients: []
+      // },      
     ]
   },
   {
