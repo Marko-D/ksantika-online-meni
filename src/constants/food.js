@@ -3,32 +3,32 @@ import {
 } from "../enums/FoodEnum";
 
 export const foodItems = [
-  // {
-  //   id: 0,
-  //   title: "Чорби",
-  //   category: true,
-  //   path: "/food/soups",
-  //   iconName: "soup",
-  //   items: [{
-  //       id: 0,
-  //       title: 'Телешка чорба',
-  //       price: 120,
-  //       quantity: null,
-  //       measureType: "",
-  //       description: '',
-  //       ingredients: []
-  //     },
-  //     {
-  //       id: 1,
-  //       title: 'Рибја Чорба',
-  //       price: 130,
-  //       quantity: null,
-  //       measureType: "",
-  //       description: '',
-  //       ingredients: []
-  //     },
-  //   ]
-  // },
+  {
+    id: 0,
+    title: "Чорби",
+    category: true,
+    path: "/food/soups",
+    iconName: "soup",
+    items: [{
+        id: 0,
+        title: 'Телешка чорба',
+        price: 200,
+        quantity: null,
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
+      // {
+      //   id: 1,
+      //   title: 'Рибја Чорба',
+      //   price: 130,
+      //   quantity: null,
+      //   measureType: "",
+      //   description: '',
+      //   ingredients: []
+      // },
+    ]
+  },
   {
     id: 1,
     title: "Салати",
@@ -70,7 +70,7 @@ export const foodItems = [
         quantity: null,
         measureType: "",
         description: '',
-        ingredients: [FoodEnum.morkov, FoodEnum.cveklo, FoodEnum.zelka, FoodEnum.domat, FoodEnum.krastavica]
+        ingredients: [FoodEnum.morkov, FoodEnum.cveklo, FoodEnum.zelka, "марула", "семки од тиква",  "крем балсамико"]
       },
       {
         id: 4,
@@ -165,7 +165,7 @@ export const foodItems = [
   },
   {
     id: 3,
-    title: "Сендвичи и врапови",
+    title: "Сендвичи",
     category: true,
     path: "/food/sandwiches",
     iconName: "sandwich",
@@ -176,7 +176,7 @@ export const foodItems = [
         quantity: null,
         measureType: "",
         description: '',
-        ingredients: [FoodEnum.prshuta, FoodEnum.kaskaval, FoodEnum.pavlaka, FoodEnum.domat, FoodEnum.krastavica, FoodEnum.pavlaka, FoodEnum.namaz]
+        ingredients: [FoodEnum.prshuta, FoodEnum.kaskaval, FoodEnum.pavlaka, FoodEnum.domat, FoodEnum.krastavica]
       },
       {
         id: 1,
@@ -189,7 +189,7 @@ export const foodItems = [
       },
       {
         id: 2,
-        title: 'Пиза сендвич',
+        title: 'Пица сендвич',
         price: 220,
         quantity: null,
         measureType: "",
@@ -769,7 +769,7 @@ export const foodItems = [
       },
       {
         id: 0,
-        title: 'Свинско филе со праз и суви пиперки',
+        title: 'Свинско филе со пршута во сос од печурки',
         price: 520,
         quantity: '',
         measureType: "",
@@ -1283,8 +1283,8 @@ export const foodItems = [
     items: [
       {
         id: 1,
-        title: 'Палачинки со крем и банана',
-        price: 120,
+        title: 'Палачинки со нутела и банана',
+        price: 160,
         quantity: null,
         measureType: "",
         description: '',
@@ -1292,8 +1292,8 @@ export const foodItems = [
       },
       {
         id: 2,
-        title: 'Палачинки со крем, банана и плазма',
-        price: 130,
+        title: 'Палачинки со нутела, банана и плазма',
+        price: 170,
         quantity: null,
         measureType: "",
         description: '',
@@ -1302,7 +1302,7 @@ export const foodItems = [
       {
         id: 3,
         title: 'Палачинки со мед и ореви',
-        price: 110,
+        price: 150,
         quantity: null,
         measureType: "",
         description: '',
@@ -1311,21 +1311,21 @@ export const foodItems = [
       {
         id: 4,
         title: 'Лешник, бадем, индиски микс',
-        price: 150,
+        price: 160,
         quantity: 100,
         measureType: "гр.",
         description: '',
         ingredients: []
       },
-      // {
-      //   id: 5,
-      //   title: 'Баклава',
-      //   price: 90,
-      //   quantity: null,
-      //   measureType: "",
-      //   description: '',
-      //   ingredients: []
-      // },
+      {
+        id: 6,
+        title: 'Топло ладно',
+        price: 180,
+        quantity: null,
+        measureType: "",
+        description: '',
+        ingredients: []
+      },
       // {
       //   id: 6,
       //   title: 'Штрудла со јаболко',
